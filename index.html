@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="img/spotify_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left bg-black">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img class="invert" src="img/logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="lib bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="img/playlist.svg" alt="playlist">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songList">
+                    <ul>
+                        <li>
+                            <div class="songdet">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="6.5" cy="18.5" r="3.5" stroke="#B3B3B3" stroke-width="1.5" />
+                                    <circle cx="18" cy="16" r="3" stroke="#B3B3B3" stroke-width="1.5" />
+                                    <path
+                                        d="M10 18.5L10 7C10 6.07655 10 5.61483 10.2635 5.32794C10.5269 5.04106 11.0175 4.9992 11.9986 4.91549C16.022 4.57222 18.909 3.26005 20.3553 2.40978C20.6508 2.236 20.7986 2.14912 20.8993 2.20672C21 2.26432 21 2.4315 21 2.76587V16"
+                                        stroke="#B3B3B3" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10 10C15.8667 10 19.7778 7.66667 21 7" stroke="#B3B3B3" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="info">
+                                    <div>Song Name</div>
+                                    <div>Song Artist</div>
+                                </div>
+                            </div>
+                            <!-- play button -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 24" id="next" width="24"
+                                height="24">
+                                <g data-name="19. Next">
+                                    <path fill="#B3B3B3"
+                                        d="M12 0a12 12 0 1 0 12 12A12.013 12.013 0 0 0 12 0Zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1-10 10Z">
+                                    </path>
+                                    <path fill="#B3B3B3"
+                                        d="M10.641 6.232a1 1 0 1 0-1.282 1.536L14.437 12l-5.078 4.232a1 1 0 0 0 1.282 1.536l6-5a1 1 0 0 0 0-1.536Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotify-playlists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="cardPlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 80 80">
+                                <!-- Green circular box -->
+                                <circle cx="40" cy="40" r="40" fill="#1fdf64" />
+
+                                <!-- Decreased size play icon path -->
+                                <path fill="#000"
+                                    d="M29.5 52.776V27.224a2 2 0 0 1 3.008-1.728l18.03 10.506a2 2 0 0 1 0 3.456L32.508 54.504A2 2 0 0 1 29.5 52.776Z">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <img src="img-playlist/happyhits/happyhits.jpg" alt="">
+                        <h2>Happy Hits!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                        <!-- stop at 52.0 min -->
+                    </div>
+                    <div class="card">
+                        <div class="cardPlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 80 80">
+                                <!-- Green circular box -->
+                                <circle cx="40" cy="40" r="40" fill="#1fdf64" />
+
+                                <!-- Decreased size play icon path -->
+                                <path fill="#000"
+                                    d="M29.5 52.776V27.224a2 2 0 0 1 3.008-1.728l18.03 10.506a2 2 0 0 1 0 3.456L32.508 54.504A2 2 0 0 1 29.5 52.776Z">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <img src="img-playlist/calmingAcoustic/calmingacoustic.jpg" alt="">
+                        <h2>Calming Acoustic</h2>
+                        <p>Keep calm with instrumental acoustic tracks.</p>
+                        <!-- stop at 52.0 min -->
+                    </div>
+                    <div class="card">
+                        <div class="cardPlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 80 80">
+                                <!-- Green circular box -->
+                                <circle cx="40" cy="40" r="40" fill="#1fdf64" />
+
+                                <!-- Decreased size play icon path -->
+                                <path fill="#000"
+                                    d="M29.5 52.776V27.224a2 2 0 0 1 3.008-1.728l18.03 10.506a2 2 0 0 1 0 3.456L32.508 54.504A2 2 0 0 1 29.5 52.776Z">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <img src="img-playlist/christmas/christmas.jpg" alt="">
+                        <h2>Christmas Classics</h2>
+                        <p>Timeless heart-warming classics from 1940- 1980 for the holiday season.
+                        </p>
+                        <!-- stop at 52.0 min -->
+                    </div>
+                    <div class="card">
+                        <div class="cardPlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 80 80">
+                                <!-- Green circular box -->
+                                <circle cx="40" cy="40" r="40" fill="#1fdf64" />
+
+                                <!-- Decreased size play icon path -->
+                                <path fill="#000"
+                                    d="M29.5 52.776V27.224a2 2 0 0 1 3.008-1.728l18.03 10.506a2 2 0 0 1 0 3.456L32.508 54.504A2 2 0 0 1 29.5 52.776Z">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <img src="img-playlist/cozyAcoustic/cozyAcoustic.jpg" alt="">
+                        <h2>Cozy Acoustic Morning</h2>
+                        <p>Warm instrumental guitar for a gentle start.</p>
+                        <!-- stop at 52.0 min -->
+                    </div>
+                    <div class="card">
+                        <div class="cardPlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 80 80">
+                                <!-- Green circular box -->
+                                <circle cx="40" cy="40" r="40" fill="#1fdf64" />
+
+                                <!-- Decreased size play icon path -->
+                                <path fill="#000"
+                                    d="M29.5 52.776V27.224a2 2 0 0 1 3.008-1.728l18.03 10.506a2 2 0 0 1 0 3.456L32.508 54.504A2 2 0 0 1 29.5 52.776Z">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <img src="img-playlist/jazzy/jazzy.jpg" alt="">
+                        <h2>Jazzy</h2>
+                        <p></p>
+                        <!-- stop at 52.0 min -->
+                    </div>
+                    <div class="card">
+                        <div class="cardPlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 80 80">
+                                <!-- Green circular box -->
+                                <circle cx="40" cy="40" r="40" fill="#1fdf64" />
+
+                                <!-- Decreased size play icon path -->
+                                <path fill="#000"
+                                    d="M29.5 52.776V27.224a2 2 0 0 1 3.008-1.728l18.03 10.506a2 2 0 0 1 0 3.456L32.508 54.504A2 2 0 0 1 29.5 52.776Z">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <img src="img-playlist/viralHits/viralHits.jpg" alt="">
+                        <h2>Viral Hits</h2>
+                        <p>Viral, trending and taking off.</p>
+                        <!-- stop at 52.0 min -->
+                    </div>
+                </div>
+                <div class="playBar">
+                    <div class="songbuttons">
+                        <!-- prev btn -->
+                        <svg width="25" height="25" viewBox="0 0 24 24" fill="#B3B3B3"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 19V5L8 12L20 19Z" stroke="#B3B3B3" stroke-width="1.5"
+                                stroke-linejoin="round" />
+                            <path d="M4 4V20" stroke="#B3B3B3" stroke-width="1.5" />
+                        </svg>
+                        <!-- play button -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 80 80">
+                            <!-- white circular box -->
+                            <circle cx="40" cy="40" r="40" fill="#fff" />
+
+                            <!-- Decreased size play icon path -->
+                            <path fill="#000"
+                                d="M29.5 52.776V27.224a2 2 0 0 1 3.008-1.728l18.03 10.506a2 2 0 0 1 0 3.456L32.508 54.504A2 2 0 0 1 29.5 52.776Z">
+                            </path>
+                        </svg>
+                        <!-- next song -->
+                        <svg width="25" height="25" viewBox="0 0 24 24" fill="#B3B3B3"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 19V5L16 12L4 19Z" stroke="#B3B3B3" stroke-width="1.5" stroke-linejoin="round" />
+                            <path d="M20 4V20" stroke="#B3B3B3" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pause at 1.57 -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
